@@ -52,8 +52,8 @@ public class EmailService {
                     .withLocale(new Locale("pt", "BR"));
 
             Context context = new Context();
-            context.setVariable("Destinatário", comunicacaoOutDTO.getNomeDestinatario());
-            context.setVariable("Mensagem", comunicacaoOutDTO.getMensagem());
+            context.setVariable("destinatario", comunicacaoOutDTO.getNomeDestinatario());
+            context.setVariable("mensagem", comunicacaoOutDTO.getMensagem());
 
             String template = templateEngine.process("notificacao", context);
 
