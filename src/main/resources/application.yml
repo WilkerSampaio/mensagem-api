@@ -2,8 +2,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ${EMAIL}
-    password: ${SENHA}
+    username:
+    password:
     protocol: smtp
     properties:
       mail:
@@ -20,8 +20,8 @@ spring:
 
 envio:
   email:
-    remetente: ${EMAIL}
-    nomeRemetente: 'Notificação Mensagem'
+    remetente:
+    nomeRemetente: 'Notificacao de Mensagem'
 
 server:
   port: 8081

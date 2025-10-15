@@ -6,7 +6,7 @@ import com.wilker.notificacao_mensagem.infrastructure.enums.StatusEnvioEnum;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -17,7 +17,7 @@ import java.util.Date;
 public class ComunicacaoOutDTO implements Serializable {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date dataHoraEnvio;
+    private LocalDateTime dataHoraEnvio;
     private String nomeDestinatario;
     private String emailDestinatario;
     private String telefoneDestinatario;
